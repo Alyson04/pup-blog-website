@@ -6,14 +6,9 @@
     transition: 0.2s linear;
  }
  
- 
  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    height: 15%;
     background: #fff;
-    padding: 2rem 9%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,7 +18,8 @@
  
  
  header .logo img {
-    max-height: 50px; /* Adjust logo size as needed */
+    max-height: 80px; /* Adjust logo size as needed */
+    padding-left: 50px;
  }
  
  
@@ -45,13 +41,12 @@
     margin: 0;
     padding: 0;
     background-color: #ffffff;
+    width: 100vw;
+    height: 100vh;
  }
  
  
- main {
-    padding: 20px;
-    margin-top: 80px; /* Added to prevent content being hidden behind the fixed header */
- }
+ 
  
  
  .box-container {
