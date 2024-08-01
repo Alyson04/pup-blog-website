@@ -1,56 +1,103 @@
-* {
+
+ * {
+
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: none;
     transition: 0.2s linear;
  }
- 
- nav{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   text-decoration: none;
-   color: black;
- }
- header {
-    height: 15%;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
- }
- 
- 
- header .logo img {
-    max-height: 80px; /* Adjust logo size as needed */
-    padding-left: 50px;
- }
- 
- 
- header .navbar a {
-    font-size: 23px;
-    padding: 0 1.5rem;
-    color: #666;
-    text-decoration: none;
- }
- 
- 
- header .navbar a:hover {
-    color: #800000;
- }
- 
- 
+
+
  body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    width: 100vw;
-    height: 100vh;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #ffffff;
+   width: 100vw;
+   height: 100vh;
  }
+
+ header {
+   background-color: #fff;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   padding: 16px 0;
+ }
+ 
+ .header-content{
+   /* display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   border: 1px solid red; */
+
+   display: flex;
+   align-items: center;
+   border: 1px solid red;
+ }
+.logo{
+   border: 1px solid blue;
+   width: 10%;
+   padding-left: 1%;
+}
+.logo img{
+   width: 80px;
+   height: 80px;
+}
+
+ .header-content nav{
+   /* display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid red; */
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    border: 1px solid green;
+ }
+ 
+ 
+ header img {
+   align-items: start;
+    max-height: 80px; /* Adjust logo size as needed */
+ }
+ 
+ 
+ .nav-link {
+
+   color: black;
+   text-decoration: none;
+   transition: color 0.3s ease;
+   position: relative;
+ }
+ 
+ .nav-link::after {
+   content: "";
+   position: absolute;
+   width: 0;
+   height: 2px;
+   background-color: #800000;
+   bottom: -4px;
+   left: 0;
+   transition: width 0.3s ease;
+ }
+ 
+ .nav-link:hover,
+ .nav-link.active {
+   color: #800000;
+ }
+ 
+ .nav-link:hover::after,
+ .nav-link.active::after {
+   width: 100%;
+ }
+ 
+ 
+ 
+
+ 
  
  
  .box-container {
