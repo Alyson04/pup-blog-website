@@ -112,10 +112,12 @@ header .logo img {
     color: white;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     padding-right: 20px;
-    box-sizing: border-box;
+    
 }
 
 button {
+    position: absolute;
+    right: 10%;
     background-color: #800000;
     color: white;
     border: none;
@@ -133,7 +135,9 @@ button:hover {
 }
 
 .content-wrapper h1{
+    border: 1px solid red;
     text-align: right;
     font-size: 10vh;
+    padding-right: 100px;
 }
 
