@@ -1,104 +1,97 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    transition: 0.2s linear;
- }
- 
- 
- header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: #fff;
-    padding: 2rem 9%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
- }
- 
- 
- header .logo img {
-    max-height: 50px; /* Adjust logo size as needed */
- }
- 
- 
- header .navbar a {
-    font-size: 23px;
-    padding: 0 1.5rem;
-    color: #666;
-    text-decoration: none;
- }
- 
- 
- header .navbar a:hover {
-    color: #800000;
- }
- 
- 
- body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
- }
- 
- 
- main {
-    padding: 20px;
-    margin-top: 80px; /* Added to prevent content being hidden behind the fixed header */
- }
- 
- 
- .box-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center; /* Adjusted to center align the boxes */
-    align-items: center;
- }
- 
- 
- .box {
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 100%;
-    text-align: justify;
-    transition: transform 0.3s ease;
- }
- 
- 
- .contact {
-    text-align: center;
-    min-height: 75vh;
-    display: flex; /* Added to center content vertically */
-    flex-direction: column; /* Ensures vertical alignment */
-    justify-content: center; /* Centers content vertically */
-    padding: 20px;
- }
- 
- 
- .contact h1 {
-    font-size: 34px; /* Increased font size for better visibility */
-    margin: 20px 0; /* Increased margin for spacing */
-    text-align: center;
-    color: #800000;
- }
- 
- 
- .contact p {
-    font-size: 18px; /* Increased font size for better readability */
-    margin-bottom: 15px; /* Added bottom margin for spacing */
- }
- 
- 
- 
- 
- 
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   transition: 0.2s linear;
+}
+
+header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   background: #fff;
+   padding: 1rem 5%; /* Adjusted for better spacing */
+   display: flex;
+   align-items: center;
+   justify-content: space-between; /* Space between logo and navbar */
+   z-index: 1000;
+   box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+header .logo img {
+   max-height: 50px; /* Adjust logo size as needed */
+}
+
+.nav-links {
+   display: flex;
+   align-items: center; /* Centers the navbar items vertically */
+}
+
+header .navbar {
+   display: flex;
+   gap: 1.5rem; /* Spacing between links */
+}
+
+header .navbar a {
+   font-size: 16px; /* Adjusted for better fit */
+   color: #666;
+   text-decoration: none;
+}
+
+header .navbar a:hover {
+   color: #800000;
+}
+
+body {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #ffffff;
+}
+
+main {
+   padding: 20px;
+   margin-top: 80px; /* Added to prevent content being hidden behind the fixed header */
+}
+
+.box-container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: center; /* Adjusted to center align the boxes */
+   align-items: center;
+}
+
+.box {
+   background-color: #fff;
+   padding: 20px;
+   border: 1px solid #ddd;
+   border-radius: 10px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+   max-width: 100%;
+   text-align: justify;
+   transition: transform 0.3s ease;
+}
+
+.contact {
+   text-align: center;
+   min-height: 75vh;
+   display: flex; /* Added to center content vertically */
+   flex-direction: column; /* Ensures vertical alignment */
+   justify-content: center; /* Centers content vertically */
+   padding: 20px;
+}
+
+.contact h1 {
+   font-size: 34px; /* Increased font size for better visibility */
+   margin: 20px 0; /* Increased margin for spacing */
+   text-align: center;
+   color: #800000;
+}
+
+.contact p {
+   font-size: 18px; /* Increased font size for better readability */
+   margin-bottom: 15px; /* Added bottom margin for spacing */
+}
