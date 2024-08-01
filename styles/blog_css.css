@@ -43,10 +43,8 @@ images section ends here*/
 
    display: flex;
    align-items: center;
-   border: 1px solid red;
  }
 .logo{
-   border: 1px solid blue;
    width: 10%;
    padding-left: 1%;
 }
@@ -65,7 +63,6 @@ images section ends here*/
     justify-content: space-around;
     align-items: center;
     width: 90%;
-    border: 1px solid green;
  }
  
  
