@@ -1,0 +1,94 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*images section starts here*/
+
+.logo img {
+    width: 140px;
+}
+
+
+
+/*images section ends here*/
+
+.title1 {
+    text-align: justify;
+    background-color: #ffffff;
+    border: 3px solid #dddddd;
+    border-radius: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+ }
+ 
+.title1 h2 {
+    color: #800000;
+    text-align: center;
+}
+
+.title1 h4 {
+    text-align: center;
+}
+
+.description1 p {
+    text-align: justify;
+    background-color: #ffffff;
+    border: 3px solid #dddddd;
+    border-radius: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+ }
+
+.title2 {
+    text-align: justify;
+    background-color: #ffffff;
+    border: 3px solid #dddddd;
+    border-radius: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+.title2 h2 {
+    color: #800000;
+    text-align: center;
+}
+
+.title2 h4 {
+    text-align: center;
+}
+
+.description2 p {
+    text-align: justify;
+    background-color: #ffffff;
+    border: 3px solid #dddddd;
+    border-radius: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+.title3 {
+    text-align: justify;
+    background-color: #ffffff;
+    border: 3px solid #dddddd;
+    border-radius: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+.title3 h2 {
+    color: #800000;
+    text-align: center;
+}
+
+.title3 h4 {
+    text-align: center;
+}
+
+.description3 p {
+    text-align: justify;
+    background-color: #ffffff;
+    border: 3px solid #dddddd;
+    border-radius: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
