@@ -12,25 +12,22 @@
    padding: 16px 0;
  }
  
- .header-content {
-   max-width: 1200px;
-   margin: 0 auto;
+ .header-content nav{
    display: flex;
-   justify-content: space-between;
-   align-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+   
  }
  
  
  header img {
     max-height: 80px; /* Adjust logo size as needed */
-    padding-left: 50px;
-    align-items: center;
  }
  
  
  .nav-link {
-   margin-left: 24px;
-   color: #333;
+
+   color: black;
    text-decoration: none;
    transition: color 0.3s ease;
    position: relative;
@@ -41,7 +38,7 @@
    position: absolute;
    width: 0;
    height: 2px;
-   background-color: #00CED1;
+   background-color: #800000;
    bottom: -4px;
    left: 0;
    transition: width 0.3s ease;
@@ -49,7 +46,7 @@
  
  .nav-link:hover,
  .nav-link.active {
-   color: #00CED1;
+   color: #800000;
  }
  
  .nav-link:hover::after,
