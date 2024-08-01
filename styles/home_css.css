@@ -117,7 +117,7 @@ header .logo img {
 
 button {
     position: absolute;
-    right: 10%;
+    right: 25%;
     background-color: #800000;
     color: white;
     border: none;
@@ -135,8 +135,8 @@ button:hover {
 }
 
 .content-wrapper h1{
-    
-    text-align: right;
+    color: black;
+    text-align: center;
     font-size: 10vh;
     padding-right: 100px;
 }
