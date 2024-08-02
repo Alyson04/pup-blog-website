@@ -26,19 +26,20 @@
     <section class="blog" id="blog">
     
     <div class = "container" >
-        <div class="banner-container">
     <img src = "../assets/1.png" id="banner" alt="">
-        </div>
-<div id="toggle1">
-<div class = "blog1" >
-    <img src = "../assets/blog1.jpg" alt=""> 
+
+
+<div id="blog1">
+    <img src = "../assets/blog1.jpg" alt="">
+    <div class = "blog-summary" > 
+
     <h2> Grad school and MMDA forge partnership to enhance statistical proficiency </h2>
     <h4> July 11, 2024 </h4>
-    <a href="#toggle1" class="button-container">Read More</a>
+    <a href="#blog1" class="readbutton">Read More</a>
 </div>
-<div class = "blog">
-    <div class = "title1">
+<div id = "blogcontent" class = "blogcontent">
     <img src = "../assets/blog1.jpg" alt="">
+    <div class = "title1">
     <h2> Grad school and MMDA forge partnership to enhance statistical proficiency </h2>
     <h4> Laurence P. Usona, News, Graduate School </h4>
     </div>
@@ -77,21 +78,21 @@
         By pooling their expertise and resources, both institutions aim to create a robust framework for 
         statistical training and research, ultimately contributing to more informed decision-making and 
         improved public service.</p>
+
+<button type="button" class = "closebutton"> Close </button>
 </div>
-<a href = "blog_page.html">
-<button type="button" id="close-button1"> Close </button>
-</a>
+</div>
 </div>
 
-<div id="toggle2">
-<div class = "blog2">
+<div id="blog2">
     <img src = "../assets/blog2.jpg" alt="">
+    <div class = "blog-summary"> </div>
     <h2> ITech hosts Research Exhibit 2024 </h2>
     <h4> July 12, 2024 </h4>
-    <a href="#toggle2" class="button-container">Read More</a>
+    <a href="#blog2" class="readbutton">Read More</a>
 </div>
 
-<div class = "blog" >
+<div id = "blogcontent" class = "blogcontent" >
     <div class = "title2"> 
         <img src = "../assets/blog2.jpg" alt="">
         <h2> ITech hosts Research Exhibit 2024 </h2>
@@ -123,20 +124,20 @@
         The Technology Research 2024 provided students and faculty to unveil their research and innovation to 
         push the boundaries of technological advancement to address real-world problems efficiently.
         </p>
-</div>
-<a href = "blog_page.html">
-<button type="button" id="close-button2"> Close </button>
-</a>
+
+<button type="button" class="closebutton"> Close </button>
+    </div>
+    </div>
 </div>
 
-<div id = "toggle3">
-<div class = "blog3">
+<div id = "blog3">
     <img src = "../assets/blog3.jpg" alt="">
+    <div class = "blog-summary">
     <h2> PUP delegates are overall champions in HackFest 2024 </h2>
     <h4> July 28, 2024 </h4>
-    <a href="#toggle3" class="button-container">Read More</a>
+    <a href="#blog3" class="readbutton">Read More</a>
 </div>
-    <div class = "blog"> 
+    <div id = "blogcontent" class = "blogcontent"> 
         <div class = "title3">
         <img src = "../assets/blog3.jpg" alt="">
         <h2> PUP delegates are overall champions in HackFest 2024 </h2>
@@ -163,7 +164,7 @@
         Furthermore, Del Rosario highlighted that the platform acts as a bridge to the business industry, 
         empowering students to realize their entrepreneurial potential through an engaging interface 
         tailored for Gen Z.
-      
+        <br> <br>
         Throughout the 12-day competition, which featured 35 teams from across the country, Diwata Overcode
          navigated team-building activities and learning sessions to develop and present their solution to 
          the hackathon challenge.
@@ -176,10 +177,10 @@
         <br> <br>
         Joining Diwata Overcode in representing PUP, team “Iskode,” composed of computer engineering students 
         Kyne Domerei Laggui, Amado Niño Rei Punzalan, Aira Altis Estur, and Joseph Buhain, secured fourth place.
-
+        <br> <br>
         PUP also fielded several other teams in the competition, including HGlarchies, S&T Innovatives, SSTech, 
-        and Sobrang Inet sa PUP, each contributing to the university’s strong representation.
-    
+        and Sobrang Inet sa PUP, each contributing to the university’s strong representation
+        <br> <br>
         Celebrating their success, Diwata Overcode hopes their achievement will inspire fellow PUPians to 
         participate in hackathons and similar competitions, sharing how their team’s journey from formation
         to reaching the top 10 highlighted their potential growth and skill development.
@@ -193,15 +194,48 @@
         students to devise innovative solutions to the prompt, “How can we entice Gen Z budding entrepreneurs 
         to join Amway as business owners?”
         </p>
-</div>
-<a href = "blog_page.html">
-<button type="button" id="close-button3"> Close </button>
-</a>
+
+<button type="button" class="closebutton"> Close </button>
+    </div>
+    </div>
 </div>
 
 </div>
 
 </section>
+
+<script> 
+document.addEventListener('DOMContentLoaded', () => {
+            const readButtons = document.querySelectorAll('.readbutton');
+            readButtons.forEach(button => {
+                button.addEventListener('click', (event) => {
+                    event.preventDefault();
+
+                    const blogContent = button.closest('div[id]').querySelector('.blogcontent');
+                    
+                    if (blogContent.style.display === 'none' || blogContent.style.display === '') {
+                        blogContent.style.display = 'block';
+                        button.textContent = '';
+                    } else {
+                        blogContent.style.display = 'none';
+                   
+                    }
+                });
+            });
+const closeButtons = document.querySelectorAll('.closebutton');
+            closeButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const blogContent = button.closest('.blogcontent');
+                    blogContent.style.display = 'none';
+                    const readButton = blogContent.previousElementSibling.querySelector('.readbutton');
+                    if (readButton) {
+                        readButton.textContent = 'Read More';
+                    }
+                });
+            });
+        });
+
+</script>
 
 </body>
 </html>
