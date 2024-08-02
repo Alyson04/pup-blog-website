@@ -141,6 +141,7 @@
 }
 .blog1a,.blog2a,.blog3a{
   width: 80%;
+  padding: 0 0 1%;
 }
 
 .another{
@@ -148,6 +149,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 .title1 {
     text-align: justify;
