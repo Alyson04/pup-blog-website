@@ -32,16 +32,14 @@
 <div id="blog1" class="blog1a">
     
     <div class = "blog-summary" > 
-
         <img src = "../assets/blog1.jpg" alt="">
         <div class="blogtitle">
             <h2> Grad school and MMDA forge partnership to enhance statistical proficiency </h2>
             <h4> July 11, 2024 </h4>
-            <a href="#blog1" class="readbutton readbuttonjs1">Read More</a>
+            <a href="#blog1" class="readbutton">Read More</a>
         </div>
-
     </div>
-    <div id = "blogcontent" class = "blogcontent first">
+    <div id = "blogcontent" class = "blogcontent">
         <div class = "title1">
             <img src = "../assets/blog1.jpg" alt="">
             <h2> Grad school and MMDA forge partnership to enhance statistical proficiency </h2>
@@ -88,18 +86,8 @@
 </div>
 </div>
 
-
 <div id="blog2" class="blog2a">
-    <img src = "../assets/blog2.jpg" alt="">
     <div class = "blog-summary">
-    <h2> ITech hosts Research Exhibit 2024 </h2>
-    <h4> July 12, 2024 </h4>
-    <a href="#blog2" class="readbutton readbuttonjs2">Read More</a>
-</div>
-
-<div id = "blogcontent" class = "blogcontent second" >
-    <div class = "title2"> 
-
         <img src = "../assets/blog2.jpg" alt="">
         <div class="blogtitle">
             <h2> ITech hosts Research Exhibit 2024 </h2>
@@ -148,17 +136,15 @@
 
 <div id = "blog3" class="blog3a">
     <div class = "blog-summary">
-
         <img src = "../assets/blog3.jpg" alt="">
         <div class="blogtitle">
         <h2> PUP delegates are overall champions in HackFest 2024 </h2>
         <h4> July 28, 2024 </h4>
-        <a href="#blog3" class="readbutton readbuttonjs3">Read More</a>
+        <a href="#blog3" class="readbutton">Read More</a>
         </div>
 
     </div>
-    <div id = "blogcontent" class = "blogcontent third"> 
-
+    <div id = "blogcontent" class = "blogcontent"> 
         <div class = "title3">
         <img src = "../assets/blog3.jpg" alt="">
         <h2> PUP delegates are overall champions in HackFest 2024 </h2>
@@ -226,44 +212,38 @@
 </div>
 
 </section>
-<script
-    src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
-    crossorigin="anonymous"></script>
+
 <script> 
 document.addEventListener('DOMContentLoaded', () => {
-    const readButtons = document.querySelectorAll('.readbutton');
-    readButtons.forEach(button => {
-        button.addEventListener('click', (event) => {
-            event.preventDefault();
-            const blogContent = button.closest('div[id]').querySelector('.blogcontent');
-            if (blogContent.style.display === 'none' || blogContent.style.display === '') {
-                blogContent.style.display = 'block';
-                button.style.display = 'none'; // Hide the Read More button
-            } else {
-                blogContent.style.display = 'none';
-            }
-        });
-    });
+            const readButtons = document.querySelectorAll('.readbutton');
+            readButtons.forEach(button => {
+                button.addEventListener('click', (event) => {
+                    event.preventDefault();
 
-    const closeButtons = document.querySelectorAll('.closebutton');
-    closeButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const blogContent = button.closest('.blogcontent');
-            blogContent.style.display = 'none';
-            const readButton = blogContent.previousElementSibling.querySelector('.readbutton');
-            if (readButton) {
-                readButton.style.display = 'block'; // Show the Read More button
-            }
+                    const blogContent = button.closest('div[id]').querySelector('.blogcontent');
+                    
+                    if (blogContent.style.display === 'none' || blogContent.style.display === '') {
+                        blogContent.style.display = 'block';
+                        button.textContent = '';
+                    } else {
+                        blogContent.style.display = 'none';
+                   
+                    }
+                });
+            });
+const closeButtons = document.querySelectorAll('.closebutton');
+            closeButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const blogContent = button.closest('.blogcontent');
+                    blogContent.style.display = 'none';
+                    const readButton = blogContent.previousElementSibling.querySelector('.readbutton');
+                    if (readButton) {
+                        readButton.textContent = 'Read More';
+                    }
+                });
+            });
         });
-    });
-});
 
-$(document).ready(function() {
-    $(".first").hide();
-    $(".second").hide();
-    $(".third").hide();
-});
 </script>
 
 </body>
