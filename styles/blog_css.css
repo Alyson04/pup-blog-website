@@ -1,16 +1,42 @@
-/*body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+/*images section starts here*/
+
+#blog1 img{
+  max-width: 50%;
+  border-radius: 10px;
+  height: auto;
 }
 
-images section starts here
-
-.logo img {
-    width: 140px;
+#blogcontent img{
+  max-width: 50%;
+  border-radius: 10px;
+  height: auto;
 }
 
+#blog3 img{
+  max-width: 50%;
+  border-radius: 10px;
+  height: auto;
+}
 
+.blog1a img{
+  max-width: 50%;
+  border-radius: 10px;
+  height: auto;
+}
 
-images section ends here*/
+.blog2a img{
+  max-width: 50%;
+  border-radius: 10px;
+  height: auto;
+}
+
+.blog3a img{
+  max-width: 50%;
+  border-radius: 10px;
+  height: auto;
+}
+/*images section ends here*/
+
 * {
     margin: 0;
     padding: 0;
@@ -65,12 +91,10 @@ images section ends here*/
     width: 90%;
  }
  
- 
  header img {
    align-items: start;
-    max-height: 80px; /* Adjust logo size as needed */
+    max-height: 80px;
  }
- 
  
  .nav-link {
 
@@ -101,7 +125,30 @@ images section ends here*/
    width: 100%;
  }
 
+.blog-summary {
+  display: flex;
+  border: 3px solid #dddddd;
+  border-radius: 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.blog-summary img{
+  padding-right: 5%;
+}
+.blog1a,.blog2a,.blog3a{
+  width: 80%;
+}
+
+.another{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .title1 {
     text-align: justify;
     background-color: #ffffff;
@@ -109,6 +156,10 @@ images section ends here*/
     border-radius: 40px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
  }
  
 .title1 h2 {
@@ -136,6 +187,10 @@ images section ends here*/
     border-radius: 40px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .title2 h2 {
@@ -163,6 +218,10 @@ images section ends here*/
     border-radius: 40px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .title3 h2 {
@@ -181,4 +240,32 @@ images section ends here*/
     border-radius: 40px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 40px;
+}
+
+#banner {
+  margin: 1% 0;
+  padding-left: 19%;
+  padding-right: 19%;
+  display: flex;
+  justify-content: center;
+}
+
+.closebutton {
+	background-color: maroon;
+  color: white;
+  border: 1px solid maroon;
+  font-size: 17px;
+  border-radius: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.5s;
+  display: block;
+  margin: 0 auto;
+}
+.closebutton:hover {
+    background-color: red;
+    color: white;
+    border: 1px solid red;
 }
