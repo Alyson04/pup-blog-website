@@ -25,7 +25,6 @@
 }
 
  header {
-   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
    padding: 16px 0;
  }
  
@@ -60,12 +59,7 @@
     align-items: center;
     width: 90%;
     
- }
- 
- 
- header img {
-   align-items: start;
-    max-height: 80px; /* Adjust logo size as needed */
+
  }
  
  
@@ -97,9 +91,7 @@
  .nav-link.active::after {
    width: 100%;
  }
-/*
 
-*/
 header .logo img {
     max-height: 80px;
 }
