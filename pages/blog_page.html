@@ -8,28 +8,37 @@
 </head>
 <body>
     <header>
-        <nav class="nav-links" id="nav-links">
+        <div class="header-content">
             <div class="logo">
                 <img src="../assets/logo.png" alt="PUP Logo">
-                <a href="../pages/home_page.html">HOME</a>
-                <a href="../pages/about_page.html">ABOUT</a>
-                <a href="../pages/blog_page.html">BLOG</a>
-                <a href="../pages/contact_page.html">CONTACT</a>
-        </nav>
+            </div>
+            
+            <nav>
+                    <a href="../pages/home_page.html"  id="home" class="nav-link">HOME</a>
+                    <a href="../pages/about_page.html" id="about" class="nav-link">ABOUT</a>
+                    <a href="../pages/blog_page.html"  id="blog" class="nav-link active">BLOG</a>
+                    <a href="../pages/contact_page.html"  id="contact" class="nav-link">CONTACT</a>
+                
+            </nav>
+        </div>
     </header>
 
     <section class="blog" id="blog">
     
     <div class = "container" >
-    <img src = "../assets/1.png" alt="">
+    <img src = "../assets/1.png" id="banner" alt="">
 
-<div id="toggle1">
-<div class = "blog1" > 
+
+<div id="blog1">
+    <img src = "../assets/blog1.jpg" alt="">
+    <div class = "blog-summary" > 
+
     <h2> Grad school and MMDA forge partnership to enhance statistical proficiency </h2>
     <h4> July 11, 2024 </h4>
-    <a href="#toggle1" class="button-container">Read More</a>
+    <a href="#blog1" class="readbutton">Read More</a>
 </div>
-<div class = "blog">
+<div id = "blogcontent" class = "blogcontent">
+    <img src = "../assets/blog1.jpg" alt="">
     <div class = "title1">
     <h2> Grad school and MMDA forge partnership to enhance statistical proficiency </h2>
     <h4> Laurence P. Usona, News, Graduate School </h4>
@@ -69,22 +78,23 @@
         By pooling their expertise and resources, both institutions aim to create a robust framework for 
         statistical training and research, ultimately contributing to more informed decision-making and 
         improved public service.</p>
+
+<button type="button" class = "closebutton"> Close </button>
 </div>
-<a href = "blog_page.html">
-<button type="button"> Close </button>
-</a>
+</div>
 </div>
 
-<div id="toggle2">
-<div class = "blog2">
+<div id="blog2">
     <img src = "../assets/blog2.jpg" alt="">
+    <div class = "blog-summary"> </div>
     <h2> ITech hosts Research Exhibit 2024 </h2>
     <h4> July 12, 2024 </h4>
-    <a href="#toggle2" class="button-container">Read More</a>
+    <a href="#blog2" class="readbutton">Read More</a>
 </div>
 
-<div class = "blog" >
+<div id = "blogcontent" class = "blogcontent" >
     <div class = "title2"> 
+        <img src = "../assets/blog2.jpg" alt="">
         <h2> ITech hosts Research Exhibit 2024 </h2>
         <h4> News, Institute of Technology </h4>
     </div>
@@ -114,21 +124,22 @@
         The Technology Research 2024 provided students and faculty to unveil their research and innovation to 
         push the boundaries of technological advancement to address real-world problems efficiently.
         </p>
-</div>
-<a href = "blog_page.html">
-<button type="button"> Close </button>
-</a>
+
+<button type="button" class="closebutton"> Close </button>
+    </div>
+    </div>
 </div>
 
-<div id = "toggle3">
-<div class = "blog3">
+<div id = "blog3">
     <img src = "../assets/blog3.jpg" alt="">
+    <div class = "blog-summary">
     <h2> PUP delegates are overall champions in HackFest 2024 </h2>
     <h4> July 28, 2024 </h4>
-    <a href="#toggle3" class="button-container">Read More</a>
+    <a href="#blog3" class="readbutton">Read More</a>
 </div>
-    <div class = "blog"> 
+    <div id = "blogcontent" class = "blogcontent"> 
         <div class = "title3">
+        <img src = "../assets/blog3.jpg" alt="">
         <h2> PUP delegates are overall champions in HackFest 2024 </h2>
         <h4> Mikaela C. Payong, News, PUP Campus Journalists </h4>
         </div>
@@ -183,15 +194,48 @@
         students to devise innovative solutions to the prompt, “How can we entice Gen Z budding entrepreneurs 
         to join Amway as business owners?”
         </p>
-</div>
-<a href = "blog_page.html">
-<button type="button"> Close </button>
-</a>
+
+<button type="button" class="closebutton"> Close </button>
+    </div>
+    </div>
 </div>
 
 </div>
 
 </section>
+
+<script> 
+document.addEventListener('DOMContentLoaded', () => {
+            const readButtons = document.querySelectorAll('.readbutton');
+            readButtons.forEach(button => {
+                button.addEventListener('click', (event) => {
+                    event.preventDefault();
+
+                    const blogContent = button.closest('div[id]').querySelector('.blogcontent');
+                    
+                    if (blogContent.style.display === 'none' || blogContent.style.display === '') {
+                        blogContent.style.display = 'block';
+                        button.textContent = '';
+                    } else {
+                        blogContent.style.display = 'none';
+                   
+                    }
+                });
+            });
+const closeButtons = document.querySelectorAll('.closebutton');
+            closeButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const blogContent = button.closest('.blogcontent');
+                    blogContent.style.display = 'none';
+                    const readButton = blogContent.previousElementSibling.querySelector('.readbutton');
+                    if (readButton) {
+                        readButton.textContent = 'Read More';
+                    }
+                });
+            });
+        });
+
+</script>
 
 </body>
 </html>
