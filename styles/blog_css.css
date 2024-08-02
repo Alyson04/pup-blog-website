@@ -182,3 +182,11 @@ images section ends here*/
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 40px;
 }
+
+
+.banner-container{
+  border: 1px solid red;
+  margin: 1% 0;
+  padding-left: 19%;
+  padding-right: 19%;
+}
