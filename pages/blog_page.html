@@ -4,27 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/blog_css.css">
 </head>
 <body>
     <header>
-        <nav class="nav-links" id="nav-links">
+        <div class="header-content">
             <div class="logo">
                 <img src="../assets/logo.png" alt="PUP Logo">
-                <a href="../pages/home_page.html">HOME</a>
-                <a href="../pages/about_page.html">ABOUT</a>
-                <a href="../pages/blog_page.html">BLOG</a>
-                <a href="../pages/contact_page.html">CONTACT</a>
-        </nav>
+            </div>
+            
+            <nav>
+                    <a href="../pages/home_page.html"  id="home" class="nav-link">HOME</a>
+                    <a href="../pages/about_page.html" id="about" class="nav-link">ABOUT</a>
+                    <a href="../pages/blog_page.html"  id="blog" class="nav-link active">BLOG</a>
+                    <a href="../pages/contact_page.html"  id="contact" class="nav-link">CONTACT</a>
+                
+            </nav>
+        </div>
     </header>
 
     <section class="blog" id="blog">
     
     <div class = "container" >
-    <img src = "../assets/1.png" alt="">
+    <img src = "../assets/1.png" id="banner" alt="">
+
 
 <div id="blog1">
     <img src = "../assets/blog1.jpg" alt="">
     <div class = "blog-summary" > 
+
     <h2> Grad school and MMDA forge partnership to enhance statistical proficiency </h2>
     <h4> July 11, 2024 </h4>
     <a href="#blog1" class="readbutton">Read More</a>
