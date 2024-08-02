@@ -1,35 +1,36 @@
 /*images section starts here*/
-.title1 img {
-  max-width: 50%; 
-  border-radius: 10px;
-  height: auto;
-}
 
-.title2 img {
-  max-width: 50%; 
-  border-radius: 10px;
-  height: auto;
-}
-
-.title3 img {
-  max-width: 50%; 
-  border-radius: 10px;
-  height: auto;
-}
-
-.blog1 img{
+#blog1 img{
   max-width: 50%;
   border-radius: 10px;
   height: auto;
 }
 
-.blog2 img{
+#blogcontent img{
   max-width: 50%;
   border-radius: 10px;
   height: auto;
 }
 
-.blog3 img{
+#blog3 img{
+  max-width: 50%;
+  border-radius: 10px;
+  height: auto;
+}
+
+.blog1a img{
+  max-width: 50%;
+  border-radius: 10px;
+  height: auto;
+}
+
+.blog2a img{
+  max-width: 50%;
+  border-radius: 10px;
+  height: auto;
+}
+
+.blog3a img{
   max-width: 50%;
   border-radius: 10px;
   height: auto;
@@ -124,6 +125,30 @@
    width: 100%;
  }
 
+.blog-summary {
+  display: flex;
+  border: 3px solid #dddddd;
+  border-radius: 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-summary img{
+  padding-right: 5%;
+}
+.blog1a,.blog2a,.blog3a{
+  width: 80%;
+}
+
+.another{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .title1 {
     text-align: justify;
     background-color: #ffffff;
@@ -217,19 +242,19 @@
     padding: 40px;
 }
 
-.banner-container{
+#banner {
   margin: 1% 0;
   padding-left: 19%;
   padding-right: 19%;
+  display: flex;
+  justify-content: center;
 }
 
-/* buttons styling starts here */
-#close-button1 {
+.closebutton {
 	background-color: maroon;
   color: white;
   border: 1px solid maroon;
   font-size: 17px;
-  font-family: verdana;
   border-radius: 15px;
   padding-left: 40px;
   padding-right: 40px;
@@ -239,51 +264,8 @@
   display: block;
   margin: 0 auto;
 }
-#close-button1:hover {
+.closebutton:hover {
     background-color: red;
     color: white;
     border: 1px solid red;
 }
-
-#close-button2 {
-	background-color: maroon;
-  color: white;
-  border: 1px solid maroon;
-  font-size: 17px;
-  font-family: verdana;
-  border-radius: 15px;
-  padding-left: 40px;
-  padding-right: 40px;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: background-color 0.5s;
-  display: block;
-  margin: 0 auto;
-}
-#close-button2:hover {
-    background-color: red;
-    color: white;
-    border: 1px solid red;
-}
-
-#close-button3 {
-	background-color: maroon;
-  color: white;
-  border: 1px solid maroon;
-  font-size: 17px;
-  font-family: verdana;
-  border-radius: 15px;
-  padding-left: 40px;
-  padding-right: 40px;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: background-color 0.5s;
-  display: block;
-  margin: 0 auto;
-}
-#close-button3:hover {
-    background-color: red;
-    color: white;
-    border: 1px solid red;
-}
-/* buttons styling starts here */
