@@ -275,6 +275,8 @@
 .readbutton{
   color: black;
   text-decoration: none;
+  border-style: none;
+  background-color: inherit;
 }
 
 .blog1a,.blog2a,.blog3a{
