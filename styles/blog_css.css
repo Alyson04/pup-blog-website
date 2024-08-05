@@ -11,10 +11,15 @@
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    margin: 0;
    padding: 0;
-   background: linear-gradient(to bottom, #d3d3d3, #ffffff);
-   background-attachment: fixed;
    width: 100vw;
    height: 100vh;
+ }
+ 
+ body {
+  /*THIS IS FOR THE BACKGROUND COLOR*/
+  background: linear-gradient(to bottom, #d3d3d3, #ffffff);
+  background-size: cover;
+  height: 100%;
  }
 
  header {
