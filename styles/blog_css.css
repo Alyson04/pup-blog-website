@@ -1,42 +1,3 @@
-/*images section starts here*/
-
-#blog1 img{
-  max-width: 50%;
-  border-radius: 10px;
-  height: auto;
-}
-
-#blogcontent img{
-  max-width: 50%;
-  border-radius: 10px;
-  height: auto;
-}
-
-#blog3 img{
-  max-width: 50%;
-  border-radius: 10px;
-  height: auto;
-}
-
-.blog1a img{
-  max-width: 50%;
-  border-radius: 10px;
-  height: auto;
-}
-
-.blog2a img{
-  max-width: 50%;
-  border-radius: 10px;
-  height: auto;
-}
-
-.blog3a img{
-  max-width: 50%;
-  border-radius: 10px;
-  height: auto;
-}
-/*images section ends here*/
-
 * {
     margin: 0;
     padding: 0;
@@ -138,25 +99,34 @@
 }
 
 .blog-summary img{
-  padding-right: 5%;
+  margin-right: 5%;
 }
 .blog1a,.blog2a,.blog3a{
   width: 80%;
   padding: 0 0 1%;
 }
 
-.another{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  
+.blog1a img{
+  max-width: 50%;
+  border-radius: 10px;
+  height: auto;
+}
+
+.blog2a img{
+  max-width: 50%;
+  border-radius: 10px;
+  height: auto;
+}
+
+.blog3a img{
+  max-width: 50%;
+  border-radius: 10px;
+  height: auto;
 }
 .title1 {
     text-align: justify;
     background-color: #ffffff;
     border: 3px solid #dddddd;
-    border-radius: 40px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 40px;
     display: flex;
@@ -177,9 +147,6 @@
 .description1 p {
     text-align: justify;
     background-color: #ffffff;
-    border: 3px solid #dddddd;
-    border-radius: 40px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 40px;
  }
 
@@ -187,7 +154,6 @@
     text-align: justify;
     background-color: #ffffff;
     border: 3px solid #dddddd;
-    border-radius: 40px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 40px;
     display: flex;
@@ -208,9 +174,7 @@
 .description2 p {
     text-align: justify;
     background-color: #ffffff;
-    border: 3px solid #dddddd;
-    border-radius: 40px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
     padding: 40px;
 }
 
@@ -218,7 +182,6 @@
     text-align: justify;
     background-color: #ffffff;
     border: 3px solid #dddddd;
-    border-radius: 40px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 40px;
     display: flex;
@@ -239,9 +202,6 @@
 .description3 p {
     text-align: justify;
     background-color: #ffffff;
-    border: 3px solid #dddddd;
-    border-radius: 40px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 40px;
 }
 
@@ -292,9 +252,6 @@
   align-items: center;
 }
 
-/* Add the following styles to your existing CSS file */
-
-/* Modal styles */
 .modal {
   display: none; /* Hidden by default */
   position: fixed;
@@ -333,6 +290,7 @@
   transition: background-color 0.5s;
   display: block;
   margin: 0 auto;
+  margin-top: 2%;
 }
 
 .closebutton:hover {
