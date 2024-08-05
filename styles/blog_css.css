@@ -96,22 +96,16 @@
  }
 
 .blog-summary {
-  display: flex;
   border: 3px solid #dddddd;
   border-radius: 40px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 10%;
   background-color:white;
 }
 
-.blog-summary img{
-  margin-right: 5%;
-}
 .blog1a,.blog2a,.blog3a{
-  width: 80%;
+  width: 25%;
+  
   padding: 0 0 1%;
 }
 
@@ -243,13 +237,10 @@
   border: 1px solid red;
 }
 
-.blog1a,.blog2a,.blog3a{
-  width: 60%;
-}
 
 .another{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
