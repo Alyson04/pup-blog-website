@@ -24,6 +24,7 @@
  }
 
  header {
+   font-weight: bolder;
    background-color: #fff;
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
    padding: 16px 0;
@@ -39,8 +40,8 @@
    align-items: center;
  }
 .logo{
-   width: 10%;
-   padding-left: 1%;
+   width: 80%;
+   padding-left: 5%;
 }
 .logo img{
    width: 80px;
@@ -54,9 +55,10 @@
     border: 1px solid red; */
    
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 18%;
+    margin: 2%;
  }
  
  header img {
