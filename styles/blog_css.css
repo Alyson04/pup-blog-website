@@ -103,7 +103,7 @@
   justify-content: center;
   align-items: center;
 
-  width: 180%;
+  width: 100%;
   background-color:white;
 }
 
@@ -166,7 +166,7 @@
  .blogtitle h4{
   padding-bottom: 40px; 
   padding-top: 5px;
-
+ }
  
 .title1 h2 {
     color: #800000;
