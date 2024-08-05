@@ -19,6 +19,14 @@
    height: 100vh;
  }
 
+ body {
+   /*THIS IS FOR THE BACKGROUND COLOR*/
+   background: linear-gradient(to bottom, #d3d3d3, #ffffff);
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 100%;
+  }
+
  header {
    background-color: #fff;
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
