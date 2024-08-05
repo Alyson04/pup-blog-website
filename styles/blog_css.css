@@ -102,6 +102,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 180%;
   background-color:white;
 }
@@ -165,7 +166,7 @@
  .blogtitle h4{
   padding-bottom: 40px; 
   padding-top: 5px;
- }
+
  
 .title1 h2 {
     color: #800000;
@@ -193,6 +194,10 @@
 .description2 p {
     text-align: justify;
     padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .title3 h2 {
@@ -277,6 +282,7 @@
 
 .closebutton {
   background-color: maroon;
+
   color: white;
   border: 1px solid maroon;
   font-size: 17px;
@@ -294,4 +300,5 @@
   background-color: red;
   color: white;
   border: 1px solid red;
+
 }
