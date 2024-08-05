@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +16,7 @@
  }
 
  body{
+  /*THIS IS FOR THE BACKGROUND COLOR*/
   height: 100%;
   background: linear-gradient(to bottom, #9e9e9e, white);
   background-size: cover;
@@ -93,7 +93,26 @@
    width: 100%;
  }
 
- /*images section starts here*/
+.blog-summary {
+  display: flex;
+  border: 3px solid #dddddd;
+  border-radius: 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180%;
+  background-color:white;
+}
+
+.blog-summary img{
+  margin-right: 5%;
+}
+.blog1a,.blog2a,.blog3a{
+  width: 80%;
+  padding: 0 0 1%;
+}
 
 #blog1 img{
   max-width: 50%;
@@ -141,33 +160,6 @@
   padding-bottom: 10px;
   margin-left: 170px;
   margin-right: auto;
-}
-/*images section ends here*/
-
-.another{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-right: 420px;
-}
-
-.blog-summary {
-  display: flex;
-  border: 3px solid #dddddd;
-  border-radius: 40px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 180%;
-  background-color:white;
-}
-
-.blog1a,.blog2a,.blog3a{
-  width: 80%;
-  padding: 0 0 1%;
 }
 
  .blogtitle h4{
@@ -256,8 +248,6 @@
   justify-content: center;
   align-items: center;
 }
-
-/* Add the following styles to your existing CSS file */
 
 /* Modal styles */
 .modal {
