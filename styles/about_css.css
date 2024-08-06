@@ -22,6 +22,7 @@
  }
 
  header {
+  font-weight: bolder;
    background-color: #fff;
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
    padding: 16px 0;
@@ -35,14 +36,16 @@
 
    display: flex;
    align-items: center;
+   width: 100%;
  }
-.logo{
-   width: 10%;
-   padding-left: 1%;
+ .logo {
+  width: 80%;
+  padding-left: 5%;
 }
-.logo img{
-   width: 80px;
-   height: 80px;
+
+.logo img {
+  width: 80px;
+  height: 80px;
 }
 
  .header-content nav{
@@ -52,9 +55,10 @@
     border: 1px solid red; */
    
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 18%;
+    margin: 2%;
  }
  
  
@@ -93,6 +97,13 @@
    width: 100%;
  }
  
+ .about {
+  text-align: center;
+  min-height: 75vh;
+  display: flex;
+  justify-content: space-between; /* Ensure space between elements */
+  padding: 20px;
+}
  
  .about-img{
     display: flex;
@@ -101,11 +112,11 @@
     height: 70vh;
     position: relative;
     overflow: hidden;
+    flex: 1;
  }
  .slideshow {
     width: 100%;
     height: 100%;
-    z-index: 0;
     position: absolute;
     top: 0;
     left: 0;
@@ -130,45 +141,14 @@
     height: 100%;
     object-fit: cover;
   }
- 
-  .main-container{
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 100%;
-    text-align: justify;
-    transition: transform 0.3s ease;
-  }
-  .container{
-    margin-top: 1%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center; /* Adjusted to center align the boxes */
-    align-items: center;
-  }
 
   .about-text{
-    background-color: #fff;
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-width: 100%;
+    max-width: 50%;
     text-align: justify;
     transition: transform 0.3s ease;
+    flex: 1;
   }
- 
-  .about{
-    text-align: center;
-    min-height: 75vh;
-    display: flex; /* Added to center content vertically */
-    flex-direction: column; /* Ensures vertical alignment */
-    justify-content: center; /* Centers content vertically */
-    padding: 20px;
- }
   
  .about h2 {
   font-size: 34px; /* Increased font size for better visibility */
