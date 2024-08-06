@@ -107,7 +107,7 @@
 
 .blog1a,.blog2a,.blog3a{
   margin: 0 1%;
-  width: 25%;
+  width: 30%;
   display: flex;
   flex-direction: column;
 }
