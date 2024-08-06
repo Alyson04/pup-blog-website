@@ -117,11 +117,7 @@ button:hover {
     font-size: 10vh;
     padding-right: 100px;
 }
-@media only screen and (max-width: 768px) {
-    body{
-        background-color: #383B39;
-    }
-}
+
 @media only screen and (max-width: 480px) {
     .background-container{
         background-image: url(../assets/bg-responsive.png);
@@ -178,5 +174,11 @@ button:hover {
     button{
         align-content: center;
         
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        background-color: #383B39;
     }
 }

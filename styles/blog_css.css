@@ -227,12 +227,6 @@
 
 }
 
-@media only screen and (max-width: 768px){
-  body{
-      background-color: #383B39;
-  }
-}
-
 @media only screen and (max-width:480px){
   body{
       font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -362,4 +356,10 @@
       text-align: justify;
       padding: 5%;
    }
+}
+
+@media only screen and (max-width: 768px){
+  body{
+      background-color: #383B39;
+  }
 }
