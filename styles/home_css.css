@@ -178,20 +178,9 @@ button:hover {
 }
 
 @media only screen and (max-width: 768px) and (min-width: 481px) {
-    body {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        margin: 0;
-        padding: 0;
-        background: linear-gradient(to bottom, #383B39, #f2f2f2ef);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-  
     header {
         font-weight: bolder;
         font-size: small;
-        background-color: #f2f2f2ef;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         padding: 1px 0;
     }
   
@@ -223,73 +212,42 @@ button:hover {
         align-items: start;
         max-height: 30px;
     }
-  
-    .about {
-      text-align: center;
-      height: 93vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 0;
-    }
-     
-     .about-img{
+
+    .main-content {
+        height: 90%;
         display: flex;
-        justify-content: center;
+        justify-content: end;
         align-items: center;
-        height: 70vh;
-        position: relative;
-        width: 80%;
-        margin-top: 2%;
-     }
-     .slideshow {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-      
-      .slide {
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out;
-      }
-      
-      .slide.active {
-        opacity: 1;
-      }
-      
-      .slide img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    
-      .about-text{
-        padding: 1%;
-        max-width: 90%;
-        text-align: justify;
-        transition: transform 0.3s ease;
-      }
-      
-     .about h2 {
-      font-size: 5vw;
-      margin: 1% 0; 
-      text-align: center;
-      color: #800000;
+        color: white;
+        text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        padding: 5%;
     }
-    
-    .about p {
-      font-size: 3vw;
-      margin-bottom: 15px;
+    .content-wrapper h1 {
+        
+        
+        /*display: none;*/
+        color: #080a0a;
+        font-size: 5vw;
+        padding-right: 0;
     }
+    button {
+        background-color: #800000;
+        color: white;
+        border: none;
+        border-radius: 5%;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 20px;
+        padding: 10px 20px;
+        align-self: flex-end; /* Use align-self instead of position */
+    }
+  
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px){
     header {
+        font-weight: bolder;
         font-size: small;
         padding: 5px 0;
       }
@@ -319,15 +277,22 @@ button:hover {
       }
        
       .main-content {
-        height: 93%;
+        height: 90%;
         display: flex;
         justify-content: end;
         align-items: center;
         color: white;
         text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        padding-right: 20px;
+        padding: 5%;
     }
-    
+    .content-wrapper h1 {
+        
+        
+        /*display: none;*/
+        color: #080a0a;
+        font-size: 5vw;
+        padding-right: 0;
+    }
     button {
         background-color: #800000;
         color: white;

@@ -371,14 +371,14 @@
     }
     
    .about h2 {
-    font-size: 5vw;
+    font-size: 3vw;
     margin: 1% 0; 
     text-align: center;
     color: #800000;
   }
   
   .about p {
-    font-size: 3vw;
+    font-size: 2vw;
     margin-bottom: 15px;
   }
 
@@ -414,66 +414,5 @@
      max-height: 40px;
   }
 
-.about {
-  text-align: center;
-  height: 93vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-}
- 
- .about-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
-    position: relative;
-    width: 80%;
-    margin-top: 2%;
- }
- .slideshow {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  .slide {
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }
-  
-  .slide.active {
-    opacity: 1;
-  }
-  
-  .slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
 
-  .about-text{
-    padding: 1%;
-    max-width: 90%;
-    text-align: justify;
-    transition: transform 0.3s ease;
-  }
-  
- .about h2 {
-  font-size: 5vw;
-  margin: 1% 0; 
-  text-align: center;
-  color: #800000;
-}
-
-.about p {
-  font-size: 3vw;
-  margin-bottom: 15px;
-}
 }
