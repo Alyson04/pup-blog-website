@@ -53,7 +53,7 @@ header {
 }
 
 .nav-link {
-    color: black;
+    color: #383B39;
     text-decoration: none;
     transition: color 0.3s ease;
     position: relative;
@@ -112,7 +112,7 @@ button:hover {
 }
 
 .content-wrapper h1 {
-    color: black;
+    color: #080a0a;
     font-size: 10vh;
     padding-right: 100px;
 }

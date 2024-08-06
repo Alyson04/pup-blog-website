@@ -4,6 +4,7 @@
     box-sizing: border-box;
     outline: none;
     transition: 0.2s linear;
+    color: #080a0a;
  }
 
  body {
@@ -62,7 +63,7 @@
  
  .nav-link {
 
-   color: black;
+   color: #383B39;
    text-decoration: none;
    transition: color 0.3s ease;
    position: relative;
