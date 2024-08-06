@@ -18,7 +18,7 @@
  body{
   /*THIS IS FOR THE BACKGROUND COLOR*/
   height: 100%;
-  background: linear-gradient(to bottom, #9e9e9e, #f2f2f2);
+  background: linear-gradient(to bottom, #9e9e9eb2, #f2f2f2ef);
   background-size: cover;
   background-repeat: no-repeat;
  }
@@ -107,7 +107,7 @@
 
 .blog1a,.blog2a,.blog3a{
   margin: 0 1%;
-  flex: 1;
+  width: 25%;
   display: flex;
   flex-direction: column;
 }
@@ -118,11 +118,11 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 10%;
   background-color:white;
-  flex: 1; /* Ensure blog-summary stretches to fill the height */
-  display: flex; /* Use flexbox for internal alignment */
-  flex-direction: column; /* Stack internal elements vertically */
-  justify-content: space-between; /* Ensure internal spacing is managed */
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-around;
   align-items: center;
+  height: 100%;
 }
 
 #blog1 img, #blog2 img, #blog3 img{
@@ -141,7 +141,6 @@
 }
 
  .blogtitle{
-  border: 1px solid red;
   text-align: center;
  }
 
