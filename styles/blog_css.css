@@ -18,14 +18,14 @@
  body{
   /*THIS IS FOR THE BACKGROUND COLOR*/
   height: 100%;
-  background: linear-gradient(to bottom, #9e9e9e, white);
+  background: linear-gradient(to bottom, #9e9e9e, #f2f2f2);
   background-size: cover;
   background-repeat: no-repeat;
  }
 
  header {
    font-weight: bolder;
-   background-color: #fff;
+   background-color: #f2f2f2;
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
    padding: 16px 0;
  }
@@ -94,6 +94,23 @@
  .nav-link.active::after {
    width: 100%;
  }
+ .banner {
+  display: grid;
+  place-items: center;
+}
+ .another{
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin: 2% 0;
+}
+
+.blog1a,.blog2a,.blog3a{
+  margin: 0 1%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
 
 .blog-summary {
   border: 3px solid #dddddd;
@@ -101,22 +118,20 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 10%;
   background-color:white;
+  flex: 1; /* Ensure blog-summary stretches to fill the height */
+  display: flex; /* Use flexbox for internal alignment */
+  flex-direction: column; /* Stack internal elements vertically */
+  justify-content: space-between; /* Ensure internal spacing is managed */
+  align-items: center;
 }
 
-.blog1a,.blog2a,.blog3a{
-  width: 25%;
-  
-  padding: 0 0 1%;
-}
-
-#blog1 img{
-  max-width: 50%;
+#blog1 img, #blog2 img, #blog3 img{
+  max-width: 80%;
   border-radius: 10px;
-  height: auto;
-  padding-right: 5%;
+  height: 70%;
 }
 
-#modal1 img{
+#modal1 img, #modal2 img, #modal3 img{
   max-width: 80%;
   border-radius: 10px;
   height: 30%;
@@ -125,110 +140,23 @@
   margin-right: auto;
 }
 
-#blog3 img{
-  max-width: 50%;
-  border-radius: 10px;
-  height: auto;
-  padding-right: 5%;
-}
-
-#modal2 img{
-  max-width: 80%;
-  border-radius: 10px;
-  height: 30%;
-  padding-bottom: 10px;
-  margin-left: 170px;
-  margin-right: auto;
-}
-
-.blog2a img{
-  max-width: 50%;
-  border-radius: 10px;
-  height: auto;
-  padding-right: 5%;
-}
-
-#modal3 img{
-  max-width: 80%;
-  border-radius: 10px;
-  height: 30%;
-  padding-bottom: 10px;
-  margin-left: 170px;
-  margin-right: auto;
-}
-
- .blogtitle h4{
-  padding-bottom: 40px; 
-  padding-top: 5px;
- }
- 
-.title1 h2 {
-    color: #800000;
-    text-align: center;
-}
-
-.title1 h4 {
-    text-align: center;
-}
-
-.description1 p {
-    text-align: justify;
-    padding: 40px;
+ .blogtitle{
+  border: 1px solid red;
+  text-align: center;
  }
 
-.title2 h2 {
-    color: #800000;
-    text-align: center;
-}
-
-.title2 h4 {
-    text-align: center;
-}
-
-.description2 p {
-    text-align: justify;
-    padding: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.title3 h2 {
-    color: #800000;
-    text-align: center;
-}
-
-.title3 h4 {
-    text-align: center;
-}
-
-.description3 p {
-    text-align: justify;
-    padding: 40px;
-}
-
-#banner {
-  margin: 1% 5% 1% 5%;
-  padding-left: 19%;
-  padding-right: 19%;
-  display: flex;
-  justify-content: center;
-}
-
-.readbutton{
+ .readbutton{
   background-color: maroon;
-  color: white;
+  color: #f2f2f2;
   border: 1px solid maroon;
-  font-size: 17px;
+  font-size: 2vh;
   border-radius: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
   cursor: pointer;
   text-transform: uppercase;
   transition: background-color 0.5s;
-  display: block;
-  margin: 0 auto;
+  margin: 2% auto;
 }
 
 .readbutton:hover {
@@ -237,13 +165,19 @@
   border: 1px solid red;
 }
 
-
-.another{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+.title1 h2, .title2 h2, .title3 h2 {
+    color: #800000;
+    text-align: center;
 }
+
+.title1 h4, .title2 h4, .title3 h4 {
+    text-align: center;
+}
+
+.description1 p, .description2 p, .description3 p {
+    text-align: justify;
+    padding: 40px;
+ }
 
 /* Modal styles */
 .modal {
