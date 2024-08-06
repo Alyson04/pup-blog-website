@@ -47,9 +47,9 @@ header {
 
 .header-content nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 18%;
+    width: 20%;
     margin: 0 2%;
 }
 
@@ -180,5 +180,60 @@ button:hover {
 @media only screen and (max-width: 768px) {
     body{
         background-color: #383B39;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    header {
+        font-size: small;
+        padding: 1px 0;
+      }
+      .header-content{
+        display: flex;
+        align-items: center;
+        padding-right: 4%;
+      }
+     .logo{
+        width: 60%;
+        padding-left: 4%;
+     }
+     .logo img{
+        width: 40px;
+        height: 40px;
+     }
+      .header-content nav{
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         width: 40%;
+         margin: 0 2%;
+      }
+      header img {
+        align-items: start;
+         max-height: 30px;
+      }
+       
+      .main-content {
+        height: 93%;
+        border: 1px solid red;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        color: white;
+        text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        padding-right: 20px;
+    }
+    
+    button {
+        background-color: #800000;
+        color: white;
+        border: none;
+        border-radius: 5%;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 20px;
+        padding: 10px 20px;
+        align-self: flex-end; /* Use align-self instead of position */
     }
 }
