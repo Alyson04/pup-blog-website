@@ -88,6 +88,7 @@
   padding: 1%;
 }
 .right-nav{
+  font-weight: bolder;
   display: flex;
   justify-content: space-around;
   width: 30%;
@@ -139,7 +140,6 @@
   align-items: center;
   height: 70vh;
   position: relative;
-  overflow: hidden;
   flex: 1;
 }
 
@@ -306,7 +306,6 @@
       padding: 0;
       box-sizing: border-box;
     }
-
     .nav{
       display: flex;
       flex-direction: column;
@@ -317,7 +316,7 @@
       align-items: center;
       height: 12.2%;
     }
-
+  
     .left-nav img{
       height: 50px;
       width: 30%;
@@ -338,6 +337,7 @@
 
     /*Extension*/
     .about {
+      margin-top: 2%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -348,6 +348,7 @@
   }
 
   .left-about {
+      position: relative;
       width: 100%;
       height: 50%;
   }
@@ -370,26 +371,26 @@
   }
 
   .right-about {
-      height: 50%;
+      height: 40%;
       width: 100%;
       transition: transform 0.3s ease;
   }
 
   .about h2 {
-      font-size: 3vh;
+      font-size: 4vw;
       margin: 10% 0 2% 0;
       color: #800000;
   }
 
   .about p {
-      font-size: 2vh;
+      font-size: 3.5vw;
   }
     
   }
 
 
 
-  /* @media only screen and (max-width: 768px) and (min-width: 481px) {
+  @media only screen and (max-width: 1024px) and (min-width: 601px) {
     body {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       margin: 0;
@@ -399,137 +400,91 @@
       background-size: cover;
   }
 
-  header {
-      font-weight: bolder;
-      font-size: small;
-      background-color: #f2f2f2ef;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      padding: 1px 0;
+  html{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 
-  .header-content {
-      display: flex;
-      align-items: center;
-      padding-right: 2%;
+  .nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 12.2%;
   }
 
-  .logo {
-      width: 40%;
-      padding-left: 2%;
+  .left-nav img{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    margin-left: 0;
+    
   }
-
-  .logo img {
-      width: 30px;
-      height: 30px;
+  .left-nav{
+    width: 40%;
+    padding: 1%;
+    margin-left: 5%;
   }
-
-  .header-content nav {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      width: 60%;
-      margin: 0 2%;
+  .right-nav{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin-right: 5%;
   }
-
-  header img {
-      align-items: start;
-      max-height: 30px;
-  }
-
+  /*THIS IS FOR ABOUT SECTION*/
   .about {
-    text-align: center;
-    height: 93vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 87.8%;
     padding: 0;
-  }
-   
-   .about-img{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 70vh;
-      position: relative;
-      width: 80%;
-      margin-top: 2%;
-   }
-   .slideshow {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-    
-    .slide {
-      width: 100%;
-      height: 100%;
-      opacity: 0;
-      transition: opacity 0.5s ease-in-out;
-    }
-    
-    .slide.active {
-      opacity: 1;
-    }
-    
-    .slide img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  
-    .about-text{
-      padding: 1%;
-      max-width: 90%;
-      text-align: justify;
-      transition: transform 0.3s ease;
-    }
-    
-   .about h2 {
-    font-size: 3vw;
-    margin: 1% 0; 
-    text-align: center;
-    color: #800000;
-  }
-  
-  .about p {
-    font-size: 2vw;
-    margin-bottom: 15px;
-  }
+}
 
+.left-about {
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.right-about {
+    height: 50%;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.about h2 {
+    font-size: 4vw;
+    margin: 4% 0 2% 0;
+    color: #800000;
+}
+
+.about p {
+    font-size: 3.5vw;
+}
   
 }
-@media only screen and (max-width: 1280px) and (min-width: 769px) {
-  header {
-    font-weight: bolder;
-    padding: 5px 0;
-  }
-  .header-content{
-    display: flex;
-    align-items: center;
-    padding-right: 4%;
-  }
- .logo{
-    width: 65%;
-    padding-left: 4%;
- }
- .logo img{
-    width: 40px;
-    height: 40px;
- }
-  .header-content nav{
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
-     width: 35%;
-     margin: 0 2%;
-  }
-  header img {
-    align-items: start;
-     max-height: 40px;
-  }
-
-
-} */
