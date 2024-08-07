@@ -17,7 +17,8 @@ footer .icon {
 }
 
 footer .text {
-    font-size: 4vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3.6vh;
     color: #fff;
 }
 
@@ -53,6 +54,7 @@ footer .text {
 }
 
 .info .txt{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     color: #fff;
     margin-right: 20px;
