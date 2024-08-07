@@ -2,7 +2,7 @@
     padding: 1%;
     background-color: #9b0a0a;
     width: 100%;
-    position: absolute; 
+    position: fixed;
     bottom: 0; 
 }
 

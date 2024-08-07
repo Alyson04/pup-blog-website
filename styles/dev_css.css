@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.2s linear;
+    color: #080a0a;
+ }
+
+.header-content{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    background-color: #f2f2f2ef;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    padding-right: 5%;
+}
+
+.logo {
+    width: 80%;
+    padding-left: 5%;
+  }
+.logo img{
+    width: 50px;
+    height: 50px;
+ }
+  
+    .header-content nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 20%;
+      margin: 0 2%;
+   }
+   
+   
+   header img {
+     align-items: start;
+      max-height: 80px; /* Adjust logo size as needed */
+   }
+   
+   
+.nav-link {
+    color: #383B39;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+}
+   
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #800000;
+    bottom: -4px;
+    left: 0;
+    transition: width 0.3s ease;
+  }
+   
+   .nav-link:hover,
+   .nav-link.active {
+     color: #800000;
+   }
+   
+   .nav-link:hover::after,
+   .nav-link.active::after {
+     width: 100%;
+   }
+
+   .main{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 190vh;
+        background: linear-gradient(to bottom, #9e9e9eb2, #f2f2f2ef);
+   }
+
+    .main h1{
+    font-size: 6vh;
+    text-align: center;
+    padding: 20px 0;
+    
+   }
+
+   .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-around;
+   
+   }
+
+   .box {
+    width: 27%;
+    height: 25%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;   
+
+  }
+
+   .box img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    
+    
+   }
+
+.box h2{
+    margin-top: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000ef;
+
+}
+
+.box .icon{
+    margin-top: 3%;
+    color:#000000ef;
+}
+
+   .box .text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000ef;
+    font-size: 2vh;
+   }
+
