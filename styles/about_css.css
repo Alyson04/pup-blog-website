@@ -16,7 +16,7 @@
  }
  
  body{
-  background: linear-gradient(to bottom, #9e9e9eb2, #f2f2f2ef);
+  background: linear-gradient(to right, #fff7f3, #a5ae9d);
   background-size: cover;
   background-repeat: no-repeat;
  }
@@ -163,3 +163,18 @@
   margin-bottom: 15px; /* Added bottom margin for spacing */
 }
  
+footer{
+  position: fixed;
+  bottom: 0;
+  background-color: #9b0a0a;
+  width: 100%;
+  padding: 1%;
+  text-align: center; 
+}
+
+#footer-container .container p {
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.7vh;
+  color: #f2f2f2ef;
+}
