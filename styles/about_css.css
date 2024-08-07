@@ -97,17 +97,18 @@
  
  .about {
   text-align: center;
-  min-height: 75vh;
+  height: 66.2vh;
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  width: inherit;
 }
  
  .about-img{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 50vh;
     position: relative;
     overflow: hidden;
     flex: 1;
