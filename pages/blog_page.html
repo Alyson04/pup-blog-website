@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="../styles/blog_css.css">
+    <link rel="stylesheet" href="../styles/footer_css.css">
     <title>PUP Blog</title>
 </head>
 <body>
@@ -26,19 +28,21 @@
     <section class="blog" id="blog">
     
     <div class = "container" >
-    <img src = "../assets/1.png" id="banner" alt="">
-
+        <div class="banner">
+    <img src = "../assets/1.png" alt="">
+</div>
 <div class="another">
 <div id="blog1" class="blog1a">
     
     <div class = "blog-summary" > 
         <img src = "../assets/blog1.jpg" alt="">
         <div class="blogtitle">
-            <h2> Grad school and MMDA forge partnership to enhance statistical proficiency </h2>
-            <h4> July 11, 2024 </h4>
+            <h5> Grad school and MMDA forge partnership to enhance statistical proficiency </h5>
+            <h6> July 11, 2024 </h6>
 
-            <button class="readbutton" onclick="openModal('modal1')">Read More</button>
+            
         </div>
+        <button class="readbutton" onclick="openModal('modal1')">Read More</button>
     </div>
     <div id = "modal1" class = "modal blogcontent">
         <div class = "modal-content title1">
@@ -95,11 +99,12 @@
     <div class = "blog-summary">
         <img src = "../assets/blog2.jpg" alt="">
         <div class="blogtitle">
-            <h2> ITech hosts Research Exhibit 2024 </h2>
-            <h4> July 12, 2024 </h4>
+            <h5> ITech hosts Research Exhibit 2024 </h5>
+            <h6> July 12, 2024 </h6>
 
-            <button class="readbutton" onclick="openModal('modal2')">Read More</button>
+            
         </div>
+        <button class="readbutton" onclick="openModal('modal2')">Read More</button>
     </div>
 
     <div id = "modal2" class = "modal blogcontent" >
@@ -146,11 +151,11 @@
     <div class="blog-summary">
         <img src="../assets/blog3.jpg" alt="">
         <div class="blogtitle">
-            <h2>PUP delegates are overall champions in HackFest 2024</h2>
-            <h4>June 28, 2024</h4>
-            <button class="readbutton" onclick="openModal('modal3')">Read More</button>
+            <h5>PUP delegates are overall champions in HackFest 2024</h5>
+            <h6>June 28, 2024</h6>
+            
         </div>
-
+        <button class="readbutton" onclick="openModal('modal3')">Read More</button>
     </div>
     <div id="modal3" class="modal blogcontent">
         <div class="modal-content title3">
@@ -204,6 +209,13 @@
     }
 
 </script>
+
+<footer>
+    <div class="footer" id="footer-container">
+    </div>
+
+    <script src="../script/script.js"></script>
+</footer>
 
 </body>
 </html>
