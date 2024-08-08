@@ -285,7 +285,7 @@ footer{
   }
   .blog1a,.blog2a,.blog3a{
     margin: 0 1%;
-    width: 80%;
+    width: 90%;
 
   }
   .blog-summary {
@@ -295,15 +295,11 @@ footer{
     padding: 4%;
     background-color:#f2f2f2ef;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
     margin: 2% 0;
   }
   
   #blog1 img, #blog2 img, #blog3 img{
-    width: 40%;
+    width: 80%;
     border-radius: 10px;
   }
   #modal1 img, #modal2 img, #modal3 img{
@@ -315,23 +311,14 @@ footer{
   }
    .blogtitle{
     text-align: center;
-    width: 30%;
+    width: 100%;
     height: 20%;
-    font-size: 2vw;
+    font-size: 3vw;
    }
   
    .readbutton{
-    background-color: maroon;
-    color: #f2f2f2ef;
-    border: 1px solid maroon;
     font-size: 2vw;
-    border-radius: 15px;
-    padding-left: 5%;
-    padding-right: 5%;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: background-color 0.5s;
-    margin: 0;
+    margin: 1%;
   }
   
   .readbutton:hover {
