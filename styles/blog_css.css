@@ -10,12 +10,12 @@
  body {
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    margin: 0;
-   padding: 0;
    width: 100vw;
    height: 100vh;
    background: linear-gradient(to bottom, #9e9e9eb2, #f2f2f2ef);
    background-size: cover;
    background-repeat: no-repeat;
+   padding-right: 15px;
  }
 
  .nav{

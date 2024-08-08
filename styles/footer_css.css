@@ -6,13 +6,13 @@
     bottom: 0; 
 }
 
-#footer-container .container {
+#footer-container .container-footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-#footer-container .container p {
+#footer-container .container-footer p {
     font-weight: bolder;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.7vh;
