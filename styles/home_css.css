@@ -13,6 +13,7 @@ html, body {
     background-color: #ffffff;
     overflow-x: hidden; /* Prevent horizontal scroll */
 }
+
 .background-container {
     background-image: url('../assets/bg.png');
     background-size: cover;
@@ -128,7 +129,6 @@ button:hover {
         padding: 0;
         box-sizing: border-box;
       }
-  
       .nav{
         display: flex;
         flex-direction: column;
@@ -142,14 +142,17 @@ button:hover {
   
       .left-nav img{
         height: 50px;
-        width: 30%;
+        width: 50px;
         padding: 0;
-        margin-left: 35%;
+        margin: 2% 0 1%;
         
       }
       .left-nav{
         padding: 0;
         margin-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       .right-nav{
         display: flex;
