@@ -12,7 +12,7 @@
    margin: 0;
    width: 100vw;
    height: 100vh;
-   background: linear-gradient(to bottom, #9e9e9eb2, #f2f2f2ef);
+   background: linear-gradient(to right, #fff7f3, #a5ae9d);
    background-size: cover;
    background-repeat: no-repeat;
    padding-right: 15px;
@@ -212,6 +212,22 @@
 
 }
 
+footer{
+  position: fixed;
+  bottom: 0;
+  background-color: #9b0a0a;
+  width: 100%;
+  padding: 1%;
+  text-align: center; 
+}
+
+#footer-container .container p {
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.7vh;
+  color: #f2f2f2ef;
+}
+
 @media only screen and (max-width: 600px) {
   /* THIS IS FOR NAVBAR */
   html{
@@ -223,6 +239,7 @@
   }
   body{
     padding-right: 0;
+    background: linear-gradient(to right, #fff7f3, #a5ae9d);
   }
   .nav{
     display: flex;
@@ -341,6 +358,18 @@
       text-align: justify;
       padding: 5%;
    }
+
+   .container-footer{
+    white-space: wrap;
+}
+
+#footer-container .container p {
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.7vh;
+  color: #f2f2f2ef;
+}
+
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 601px) {
@@ -348,7 +377,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #383B39, #f2f2f2ef);
+    background: linear-gradient(to right, #fff7f3, #a5ae9d);
     background-repeat: no-repeat;
     background-size: cover;
 }
