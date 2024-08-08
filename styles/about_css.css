@@ -186,6 +186,7 @@
 }
 
 footer{
+  opacity: .7;
   position: fixed;
   bottom: 0;
   background-color: #9b0a0a;

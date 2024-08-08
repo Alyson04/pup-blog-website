@@ -213,6 +213,7 @@
 }
 
 footer{
+  opacity: .7;
   position: fixed;
   bottom: 0;
   background-color: #9b0a0a;
@@ -296,6 +297,9 @@ footer{
     background-color:#f2f2f2ef;
     height: 100%;
     margin: 2% 0;
+  }
+  .last{
+    margin-bottom: 8%;
   }
   
   #blog1 img, #blog2 img, #blog3 img{
