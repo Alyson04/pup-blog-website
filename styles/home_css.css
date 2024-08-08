@@ -113,7 +113,7 @@ button:hover {
 
 .content-wrapper h1 {
     color: #080a0a;
-    font-size: 10vh;
+    font-size: 5rem;
     padding-right: 100px;
 }
 
@@ -175,7 +175,8 @@ button:hover {
         
         /*display: none;*/
         color: #080a0a;
-        font-size: 10vw;
+        /*NOTE THIS FONT SIZE MIGHT CHANGE*/
+        font-size: 2.5rem;
         padding-right: 0;
     }
     button{
@@ -242,7 +243,8 @@ button:hover {
         
         /*display: none;*/
         color: #080a0a;
-        font-size: 8vw;
+        /* NOTE THIS FONT SIZE MIGHT CHANGE */
+        font-size: 1.5rem;
         padding-right: 0;
     }
     button{
