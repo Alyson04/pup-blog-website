@@ -13,7 +13,6 @@ html, body {
     background-color: #ffffff;
     overflow-x: hidden; /* Prevent horizontal scroll */
 }
-
 .background-container {
     background-image: url('../assets/bg.png');
     background-size: cover;
@@ -23,35 +22,35 @@ html, body {
     height: 100%; /* Ensure the background covers the full viewport */
 }
 
-header {
-    font-weight: bolder;
-    padding: 5px 0;
-}
-
-.header-content {
+.nav{
     display: flex;
-    align-items: center;
+    flex-direction: row;
     width: 100%;
-    padding-right: 5%;
-}
-
-.logo {
-    width: 75%;
-    padding-left: 5%;
-}
-
-.logo img {
-    width: 50px;
+    margin: 0;
+    padding-right: 15px;
+    justify-content: center;
+    align-items: center;
+    height: 12.2%;
+  }
+  
+  .left-nav img{
     height: 50px;
-}
-
-.header-content nav {
+    width: 50px;
+    padding: 0;
+    margin: 0;
+  }
+  .left-nav{
+    width: 70%;
+    margin-left: 5%;
+    padding: 1%;
+  }
+  .right-nav{
+    font-weight: bolder;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    width: 25%;
-    margin: 0 2%;
-}
+    width: 30%;
+    margin-right: 5%;
+  }
 
 .nav-link {
     color: #383B39;
@@ -86,7 +85,7 @@ header .logo img {
 }
 
 .main-content {
-    height: 90%;
+    height: 87.8%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -114,6 +113,143 @@ button:hover {
 
 .content-wrapper h1 {
     color: #080a0a;
-    font-size: 10vh;
+    font-size: 5rem;
     padding-right: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+    .background-container{
+        background-image: url(../assets/bg-responsive.png);
+    }
+    html{
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+  
+      .nav{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        height: 12.2%;
+      }
+  
+      .left-nav img{
+        height: 50px;
+        width: 30%;
+        padding: 0;
+        margin-left: 35%;
+        
+      }
+      .left-nav{
+        padding: 0;
+        margin-left: 0;
+      }
+      .right-nav{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-right: 0;
+      }
+     
+     .main-content {
+        /*REMOVED*/
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        color: white;
+        text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        padding: 0;
+        text-align: center;
+    }
+    .content-wrapper h1 {
+        
+        
+        /*display: none;*/
+        color: #080a0a;
+        /*NOTE THIS FONT SIZE MIGHT CHANGE*/
+        font-size: 2.5rem;
+        padding-right: 0;
+    }
+    button{
+        align-content: center;
+        margin-bottom: 2%;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 601px) {
+    .background-container{
+        background-image: url(../assets/bg-responsive.png);
+    }
+    html{
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+  
+      .nav{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        height: 12.2%;
+      }
+  
+      .left-nav img{
+        height: 50px;
+        width: 50px;
+        padding: 0;
+        margin-left: 0;
+        
+      }
+      .left-nav{
+        width: 40%;
+        padding: 1%;
+        margin-left: 5%;
+      }
+      .right-nav{
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+        margin-right: 5%;
+      }
+      .main-content {
+        /*REMOVED*/
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        color: white;
+        text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        padding: 0;
+        text-align: center;
+    }
+    .content-wrapper h1 {
+        
+        
+        /*display: none;*/
+        color: #080a0a;
+        /* NOTE THIS FONT SIZE MIGHT CHANGE */
+        font-size: 1.5rem;
+        padding-right: 0;
+    }
+    button{
+        align-content: center;
+        margin-bottom: 2%;
+    }
+  
 }

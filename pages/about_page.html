@@ -3,87 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PUP Blog</title>
+    <title>About</title>
+    
+    <!-- STYLESHEETS -->
     <link rel="stylesheet" href="../styles/about_css.css">
-    <link rel="stylesheet" href="../styles/footer_css.css">
+
+    <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="../assets/16x16.jpg" type="image/jpg">
 
     
 </head>
 <body>
-    <header>
+    
+    <!-- <header>
         <div class="header-content">
             <div class="logo">
                 <img src="../assets/logo.png" alt="PUP Logo">
             </div>
-            
+    
             <nav>
-                    <a href="../pages/home_page.html"  id="home" class="nav-link">HOME</a>
-                    <a href="../pages/about_page.html" id="about" class="nav-link active">ABOUT</a>
-                    <a href="../pages/blog_page.html"  id="blog" class="nav-link">BLOG</a>
-                
+                <a href="../pages/home_page.html"  id="home" class="nav-link">HOME</a>
+                <a href="../pages/about_page.html" id="about" class="nav-link active">ABOUT</a>
+                <a href="../pages/blog_page.html"  id="blog" class="nav-link">BLOG</a>
             </nav>
         </div>
-    </header>
-                <div class="about" id="about">
-                    
+    </header> -->
 
-                    <div class="about-img">
-                        <div class="slideshow">
+    <!-- NAVIGATION -->
+    <div class="nav">
+        <div class="left-nav">
+            <img src="../assets/logo.png" alt="PUP Logo">
+        </div>
+        <div class="right-nav">
+            <a href="../index.html"  id="home" class="nav-link">HOME</a>
+            <a href="../pages/about_page.html" id="about" class="nav-link active">ABOUT</a>
+            <a href="../pages/blog_page.html"  id="blog" class="nav-link">BLOG</a>
+            <a href="../pages/dev_page.html"  id="dev" class="nav-link">DEVELOPERS</a>
+        </div>
+    </div>
 
-                            <div class="slide active">
-                              <img src="../assets/about picture 2.jpg" alt="Pic 1">
-                            </div>
+     <!-- ABOUT SECTION -->
+    <div class="about" id="about">
+        <div class="left-about">
+            <div class="slide active">
+                <img src="../assets/about picture 2.jpg" alt="Pic 1">
+            </div>
 
-                            <div class="slide">
-                              <img src="../assets/about picture 3.jpg" alt="Pic 2">
-                            </div>
+            <div class="slide">
+                <img src="../assets/about picture 3.jpg" alt="Pic 2">
+            </div>
 
-                            <div class="slide">
-                              <img src="../assets/about 1.jpg" alt="Pic 3">
-                              </div>
-
-                              
-                        </div>
-                    </div>
-
-                        
-                            <div class="about-text">
-
-                                <h2>ABOUT</h2>
-
-                            <p>We, the student from Polytechnic University of the Philippines is shaping the About page of the website we’re creating.
-                                With a strong foundation in coding and design, we are committed to crafting an informative and engaging section that 
-                                showcases our company’s ethos, achievements, and team, Through meticulous attention to detail and a passion for technology, 
-                                we aim to enhance our online present and provide visitors with a meaningful introductions to our organization. </p>
-                            <p>We are excited about the opportunity to contribute to this project and look forward to delivering a compelling About page that 
-                                reflects our dedication and skills as IT students.</p>
-                            </div>
-                        
-                    
-                    </div>
+            <div class="slide">
+                <img src="../assets/about 1.jpg" alt="Pic 3">
+            </div>
+        </div>
+        <div class="right-about">
+            <h2>ABOUT</h2>
+            <p>We, the student from Polytechnic University of the Philippines is shaping the About page of the website we’re creating.
+            With a strong foundation in coding and design, we are committed to crafting an informative and engaging section that 
+            showcases our company’s ethos, achievements, and team, Through meticulous attention to detail and a passion for technology, 
+            we aim to enhance our online present and provide visitors with a meaningful introductions to our organization. </p>
+            <p>We are excited about the opportunity to contribute to this project and look forward to delivering a compelling About page that 
+            reflects our dedication and skills as IT students.</p>
+        </div>               
+    </div>
     
-
-                    <div id="footer-container"></div>
-                    <script src="../script/script.js"></script>                  
-
-                <script>
-                    const Slides = document.querySelectorAll('.slide');
-                    let currentSlide = 0;
-            
-                    function showSlide(n) {
-                    Slides[currentSlide].classList.remove('active');
-                    currentSlide = (n + Slides.length) % Slides.length;
-                    Slides[currentSlide].classList.add('active');
-                    }
-            
-                    function nextSlide() {
-                    showSlide(currentSlide + 1);
-                    }
-            
-                    setInterval(nextSlide, 5000);
-                </script>
-
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer" id="footer-container">
+        </div>
+    
+        <script src="../script/script.js"></script>
+    </footer>
 
 </body>
 </html>
