@@ -221,6 +221,9 @@
     padding: 0;
     box-sizing: border-box;
   }
+  body{
+    padding-right: 0;
+  }
   .nav{
     display: flex;
     flex-direction: column;
@@ -237,7 +240,6 @@
     width: 30%;
     padding: 0;
     margin-left: 35%;
-    
   }
   .left-nav{
     padding: 0;
