@@ -162,6 +162,7 @@ margin-top: 2%;
 }
 
 footer{
+  opacity: .7;
   bottom: 0;
   background-color: #9b0a0a;
   width: 100%;
@@ -234,7 +235,7 @@ footer{
 #footer-container .container p {
   font-weight: bolder;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.7vh;
+  font-size: 1.2vh;
   color: #f2f2f2ef;
 }
 
@@ -298,4 +299,14 @@ footer{
       align-items: center;
       padding-bottom: 6%;
      }
+     .container-footer{
+      white-space: wrap;
+  }
+  
+  #footer-container .container p {
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5vh;
+    color: #f2f2f2ef;
+  }
    }
