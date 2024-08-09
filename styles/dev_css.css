@@ -5,6 +5,7 @@
   outline: none;
   transition: 0.2s linear;
   color: #080a0a;
+  
 }
 
 html, body {
@@ -84,7 +85,6 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
   padding: 0;
-  
 }
 
 .main h1{
@@ -99,8 +99,6 @@ display: flex;
 flex-wrap: wrap;
 gap: 15px;
 justify-content: space-around;
-
-
 }
 
 .box {
@@ -124,7 +122,6 @@ border-radius: 5px;
 margin-top: 2%;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 color: #000000ef;
-
 }
 
 .box .icon{
@@ -136,11 +133,13 @@ color:#000000ef;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 color: #000000ef;
 font-size: .8rem;
+font-weight: normal;
 }
 .skills-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start; 
+  
 }
 
 .left-skills, .right-skills {
@@ -159,6 +158,7 @@ margin-top: 2%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #000000ef;
   font-size: .8rem;
+  font-weight: normal;
 }
 
 footer{
