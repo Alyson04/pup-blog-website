@@ -16,6 +16,8 @@
    background: linear-gradient(to right, #fff7f3, #a5ae9d);
    background-size: cover;
    background-repeat: no-repeat;
+   display: flex;
+   flex-direction: column;
  }
 
  .nav{
@@ -26,8 +28,7 @@
   padding-right: 15px;
   justify-content: center;
   align-items: center;
-  height: 12.2%;
-  
+  height: 12.2%; 
 }
 
 .left-nav img{
@@ -84,12 +85,19 @@
  .banner img{
   width: 30%;
  }
+ .container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+ }
  .another{
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: stretch;
   margin: 2% 0;
-  flex-grow: 1;
 }
 
 .blog1a,.blog2a,.blog3a{
@@ -216,6 +224,7 @@
 }
 
 footer{
+  position: fixed;
   opacity: .7;
   bottom: 0;
   background-color: #9b0a0a;
@@ -349,6 +358,9 @@ footer{
       padding: 5%;
    }
 
+   footer{
+    position: unset;
+   }
    .container-footer{
     white-space: wrap;
 }
@@ -475,4 +487,9 @@ footer{
     text-align: justify;
     padding: 5%;
  }
+
+ footer{
+  position: unset;
+ }
+
 }
