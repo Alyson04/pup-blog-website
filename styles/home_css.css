@@ -174,7 +174,7 @@ button:hover {
         
         display: flex;
         flex-direction: column;
-        justify-content: end;
+        justify-content: center;
         align-items: center;
         color: white;
         text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
