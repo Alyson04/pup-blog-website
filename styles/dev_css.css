@@ -15,7 +15,7 @@ html, body {
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background: linear-gradient(to right, #fff7f3, #a5ae9d);
+  background-image: linear-gradient(to right bottom, #bf4949, #d16c4f, #df8f5b, #eab06e, #f3d288, #efe095, #ebeda4, #e7f9b6, #d5f5b8, #c5f0ba, #b5ebbe, #a7e6c1);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -162,7 +162,6 @@ margin-top: 2%;
 }
 
 footer{
-  opacity: .7;
   bottom: 0;
   background-color: #9b0a0a;
   width: 100%;
@@ -235,7 +234,7 @@ footer{
 #footer-container .container p {
   font-weight: bolder;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.2vh;
+  font-size: 1.7vh;
   color: #f2f2f2ef;
 }
 
@@ -299,14 +298,4 @@ footer{
       align-items: center;
       padding-bottom: 6%;
      }
-     .container-footer{
-      white-space: wrap;
-  }
-  
-  #footer-container .container p {
-    font-weight: bolder;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5vh;
-    color: #f2f2f2ef;
-  }
    }

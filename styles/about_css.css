@@ -13,7 +13,7 @@
    padding-right: 15px;
    width: 100vw;
    height: 100vh;
-   background: linear-gradient(to right, #fff7f3, #a5ae9d);
+   background-image: linear-gradient(to right bottom, #bf4949, #d16c4f, #df8f5b, #eab06e, #f3d288, #efe095, #ebeda4, #e7f9b6, #d5f5b8, #c5f0ba, #b5ebbe, #a7e6c1);
    background-size: cover;
    background-repeat: no-repeat;
  }
