@@ -13,7 +13,7 @@
    padding: 0;
    width: 100vw;
    height: 100vh;
-   background: linear-gradient(to right, #fff7f3, #a5ae9d);
+   background-image: linear-gradient(to right top, #850909, #9c3d29, #b2634b, #c68771, #d8ac9a, #e5b8a2, #f2c4a9, #fed0b1, #ffc992, #ffc372, #f9c14d, #ebc01b);
    background-size: cover;
    background-repeat: no-repeat;
    display: flex;
@@ -239,7 +239,7 @@ footer{
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-  background: linear-gradient(to right, #fff7f3, #a5ae9d);
+    background-image: linear-gradient(to right top, #850909, #9c3d29, #b2634b, #c68771, #d8ac9a, #e5b8a2, #f2c4a9, #fed0b1, #ffc992, #ffc372, #f9c14d, #ebc01b);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -373,7 +373,7 @@ footer{
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-  background: linear-gradient(to right, #fff7f3, #a5ae9d);
+    background-image: linear-gradient(to right top, #850909, #9c3d29, #b2634b, #c68771, #d8ac9a, #e5b8a2, #f2c4a9, #fed0b1, #ffc992, #ffc372, #f9c14d, #ebc01b);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
