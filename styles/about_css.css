@@ -80,6 +80,7 @@
  }
  
  .about {
+  flex-grow: 1;
   height: 81.5%;
   display: flex;
   justify-content: space-between;
