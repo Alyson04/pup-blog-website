@@ -5,40 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/blog_css.css">
-    <title>PUP Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="../assets/16x16.jpg" type="image/jpg">
+    <title>Blog</title>
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <div class="logo">
-                <img src="../assets/logo.png" alt="PUP Logo">
-            </div>
-            
-            <nav>
-                    <a href="../pages/home_page.html"  id="home" class="nav-link">HOME</a>
-                    <a href="../pages/about_page.html" id="about" class="nav-link">ABOUT</a>
-                    <a href="../pages/blog_page.html"  id="blog" class="nav-link active">BLOG</a>
-                
-            </nav>
+    <div class="nav">
+        <div class="left-nav">
+            <img src="../assets/logo.png" alt="PUP Logo">
         </div>
-    </header>
-
+        <div class="right-nav">
+            <a href="../index.html"  id="home" class="nav-link">HOME</a>
+            <a href="../pages/about_page.html" id="about" class="nav-link">ABOUT</a>
+            <a href="../pages/blog_page.html"  id="blog" class="nav-link  active">BLOG</a>
+            <a href="../pages/dev_page.html"  id="dev" class="nav-link">DEVELOPERS</a>
+        </div>
+    </div>
     <section class="blog" id="blog">
     
     <div class = "container" >
-    <img src = "../assets/1.png" id="banner" alt="">
-
+        <div class="banner">
+    <img src = "../assets/1.png" alt="">
+</div>
 <div class="another">
 <div id="blog1" class="blog1a">
     
     <div class = "blog-summary" > 
         <img src = "../assets/blog1.jpg" alt="">
         <div class="blogtitle">
-            <h2> Grad school and MMDA forge partnership to enhance statistical proficiency </h2>
-            <h4> July 11, 2024 </h4>
+            <h5> Grad school and MMDA forge partnership to enhance statistical proficiency </h5>
+            <h6> July 11, 2024 </h6>
 
-            <button class="readbutton" onclick="openModal('modal1')">Read More</button>
+            
         </div>
+        <button class="readbutton" onclick="openModal('modal1')">Read More</button>
     </div>
     <div id = "modal1" class = "modal blogcontent">
         <div class = "modal-content title1">
@@ -95,11 +95,12 @@
     <div class = "blog-summary">
         <img src = "../assets/blog2.jpg" alt="">
         <div class="blogtitle">
-            <h2> ITech hosts Research Exhibit 2024 </h2>
-            <h4> July 12, 2024 </h4>
+            <h5> ITech hosts Research Exhibit 2024 </h5>
+            <h6> July 12, 2024 </h6>
 
-            <button class="readbutton" onclick="openModal('modal2')">Read More</button>
+            
         </div>
+        <button class="readbutton" onclick="openModal('modal2')">Read More</button>
     </div>
 
     <div id = "modal2" class = "modal blogcontent" >
@@ -143,14 +144,14 @@
 </div>
 
 <div id="blog3" class="blog3a">
-    <div class="blog-summary">
+    <div class="blog-summary last">
         <img src="../assets/blog3.jpg" alt="">
         <div class="blogtitle">
-            <h2>PUP delegates are overall champions in HackFest 2024</h2>
-            <h4>June 28, 2024</h4>
-            <button class="readbutton" onclick="openModal('modal3')">Read More</button>
+            <h5>PUP delegates are overall champions in HackFest 2024</h5>
+            <h6>June 28, 2024</h6>
+            
         </div>
-
+        <button class="readbutton" onclick="openModal('modal3')">Read More</button>
     </div>
     <div id="modal3" class="modal blogcontent">
         <div class="modal-content title3">
@@ -194,16 +195,12 @@
 </div>
 </section>
 
-<script>
-    function openModal(modalId) {
-        document.getElementById(modalId).style.display = 'flex';
-    }
+<footer>
+    <div class="footer" id="footer-container">
+    </div>
 
-    function closeModal(modalId) {
-        document.getElementById(modalId).style.display = 'none';
-    }
-
-</script>
+    <script src="../script/script.js"></script>
+</footer>
 
 </body>
 </html>
