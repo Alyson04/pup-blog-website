@@ -27,6 +27,7 @@
   justify-content: center;
   align-items: center;
   height: 12.2%;
+  
 }
 
 .left-nav img{
@@ -88,6 +89,7 @@
   justify-content: center;
   align-items: stretch;
   margin: 2% 0;
+  flex-grow: 1;
 }
 
 .blog1a,.blog2a,.blog3a{
@@ -230,18 +232,17 @@ footer{
 }
 
 @media only screen and (max-width: 600px) {
-  /* THIS IS FOR NAVBAR */
-  html{
-    
-    width: 100vw;
+  html,body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
+  background: linear-gradient(to right, #fff7f3, #a5ae9d);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   }
-  body{
-    padding-right: 0;
-    background: linear-gradient(to right, #fff7f3, #a5ae9d);
-  }
+  
   .nav{
     display: flex;
     flex-direction: column;
@@ -258,6 +259,7 @@ footer{
     width: 50px;
     padding: 0;
     margin: 2% 0 1%;
+    
   }
   .left-nav{
     padding: 0;
@@ -271,6 +273,7 @@ footer{
     justify-content: space-around;
     width: 100%;
     margin-right: 0;
+    font-size: .7rem;
   }
   /* THIS IS A BANNER */
   .banner {
@@ -328,15 +331,8 @@ footer{
     margin: 1%;
   }
   
-  .readbutton:hover {
-    background-color: red;
-    color: #f2f2f2ef;
-    border: 1px solid red;
-  }
-  
   .title1 h2, .title2 h2, .title3 h2 {
       font-size: smaller;
-      color: #800000;
       text-align: center;
       margin-top: 2%;
   }
@@ -367,21 +363,16 @@ footer{
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 601px) {
-  body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  html,body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #fff7f3, #a5ae9d);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-html{
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    box-sizing: border-box;
+    overflow-x: hidden;
+  background: linear-gradient(to right, #fff7f3, #a5ae9d);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  }
 
 .nav{
   display: flex;
@@ -425,11 +416,11 @@ html{
   display: grid;
   place-items: center;
   margin: 2% 0;
-  padding-bottom: 5%;
+  padding: 0;
 }
 .blog1a,.blog2a,.blog3a{
   margin: 0 1%;
-  width: 80%;
+  width: 90%;
 
 }
 .blog-summary {
@@ -441,7 +432,9 @@ html{
   height: 100%;
   margin: 2% 0;
 }
-
+.last{
+  margin-bottom: 8%;
+}
 #blog1 img, #blog2 img, #blog3 img{
   width: 80%;
   border-radius: 10px;
@@ -461,28 +454,12 @@ html{
  }
 
  .readbutton{
-  background-color: maroon;
-  color: #f2f2f2ef;
-  border: 1px solid maroon;
   font-size: .7rem;
-  border-radius: 15px;
-  padding-left: 5%;
-  padding-right: 5%;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: background-color 0.5s;
-  margin: 0;
-}
-
-.readbutton:hover {
-  background-color: red;
-  color: #f2f2f2ef;
-  border: 1px solid red;
+  margin: 1%;
 }
 
 .title1 h2, .title2 h2, .title3 h2 {
     font-size: smaller;
-    color: #800000;
     text-align: center;
     margin-top: 2%;
 }

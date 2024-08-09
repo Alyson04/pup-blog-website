@@ -39,6 +39,6 @@ function renderFooter() {
 
 renderFooter();
 
-renderFooter();
+
 
 
