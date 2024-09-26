@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../styles/contact_css.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="left-nav">
+                <img src="../assets/logo.png" alt="PUP Logo">
+            </div>
+            <div class="right-nav">
+                <a href="../index.html" id="home" class="nav-link">HOME</a>
+                <a href="about_page.html" id="about" class="nav-link">ABOUT</a>
+                <a href="blog_page.html" id="blog" class="nav-link">BLOG</a>
+                <a href="dev_page.html" id="dev" class="nav-link">DEVELOPERS</a>
+                <a href="contact.html" id="contact" class="nav-link active">CONTACT</a> <!-- Contact page is active -->
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="contact-form">
+            <h2>Get in Touch</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: info@example.com</p>
+            <p>Phone: (123)
